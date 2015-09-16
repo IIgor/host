@@ -1,7 +1,8 @@
 .wrapper{
-	height: 100%;
-	min-height: 100%;
-	padding: 0 0 385px 0;
+	// height: 100%;
+	// min-height: 100%;
+	// padding: 0 0 385px 0;
+	overflow: hidden;
 }
 
 
@@ -15,7 +16,7 @@
 			display: inline-block;
 			width: 26px;
 			height: 26px;
-			background: url('../img/icons.png') 0px 0px no-repeat;
+			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjREMjE0NUU0NEU1MTFFNTlCMjA5NUUxRUUzMTY3ODYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjREMjE0NUY0NEU1MTFFNTlCMjA5NUUxRUUzMTY3ODYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCNEQyMTQ1QzQ0RTUxMUU1OUIyMDk1RTFFRTMxNjc4NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCNEQyMTQ1RDQ0RTUxMUU1OUIyMDk1RTFFRTMxNjc4NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnL3MNwAAAUkSURBVHja7Nw9axRBHMDhPTnEl8pcq4UgSPwCxiqpBCsrO4OljY02go21KWzMBxB8KbUTTGUK0RS2sRLB2FjEzkQw5PwPNyeXyV3YI27O4PPAkOzeZYspfsxN9rbV7XYrgMPgiCkADov24MHWrct7vbcV43iMYzF+xtiMsWN51l5cMqPARFdY0zGexNiO8SPGev65nc/P5JgBTCxYUzHexFiNcX3Ee9L5dzE+xThtOoFJBGsmr6Rma17nbIy1+Eh5xZQCBxms6bxqGuZpjDv55zCvIlozphVoQmvwtoaIzYmqtz9VuhRjpdq5yZ72rS7GeJ5XWIM67cWl76YXaHKFdb84/hzjZIz3RayqfJzOn4+xXLz2wtQCja2wRqyuOjHqrJSG/e2ZWGV9NcVAEyuscoN9oWasko0Y88W5a6YXaCpYc8Vrj8a8Vvkx8KrpBZoKVrki+jbmtTaL49n4mOmGUqCRYH3Z57XSZli5+d42xUATwdqvtJoa3AdL/2HcMsVAE8FaKV47N+a1ThXHb9uLS55dAzQSrJfFa/fGvNaN4vi16QWaCtaH4rX0xebpmtdJX3x+WJxz8yjQTLDi49uvave9VKs1opWe6rBWnFuI622YXqCpFVbyrOptlpfRepDD1L9NoZWPb1e9pzqUHpta4G8rv/zcXzGt7/E36daFOo+d8QVooNEVVpIi0xmy0uqr+4ys9QjglCkGmgxWP1rpKQwLNa+T3ndBtIBJBCtJm/B3q97jZear3XexL+fznfy+j/l30QIOPFh96b996Qmjc/n9R/PPuXz+zz5V3rMSLWBiwRrUzSuvkXew7xEt92UBBxqsWkZEa810A/9csIpoLeePjjdNN7AfO+7DAvgvV1gAggUIFoBgAQgWIFgAggUgWIBgAQgWgGABggUgWACCBQgWgGABCBYgWACCBSBYgGABCBaAYAGCBSBYAIIFCBaAYAGCZQoAwQIQLECwAAQLQLAAwQIQLADBAgQLQLAABAsQLADBAhAsQLAABAtAsADBAhAsAMECBAtAsAAECxAsAMECECxAsAAECxAsAMECECxAsAAEC0CwAMECECwAwQIEC0CwAAQLECwAwQIQLECwAAQLQLAAwQIQLADBAgQLQLAABAsQLADBAhAsQLAABAsQLADBAhAsQLAABAtAsADBAhAsAMECBAtAsAAECxAsAMECECxAsAAEC0CwAMECECwAwQIEC0CwAAQLECwAwQIQLECwAAQLECwAwQIQLECwAAQLQLAAwQIQLADBAgQLQLAABAsQLADBAhAsQLAABAtAsADBAhAsAMECBAtAsAAECxAsAMECECxAsAAECxAsAMECECxAsAAEC0CwAMECECwAwQIEC0CwAAQLECwAwQIQLECwAAQLQLAAwQIQLADBAgQLQLAABAsQLADBAhAsQLAABAsQLADBAhAsQLAABAtAsADBAhAsAMECBAtAsAAECxAsAMECECxAsAAEC0CwAMECECwAwQIEC0CwAAQLECwAwQIQLECwAAQLECwAwQIQLECwAAQLQLAAwQIQLADBAgQLQLAABAsQLADBAhAsQLAABAtAsADBAhAsAMECBAtAsAAECxAsAMECECxAsAAECxAsAMECECxAsAAEC0CwAMECECwAwQIEC0CwAAQLECwAwQIQLECwAAQLQLAAwQIQLADBAgQLQLAABAsQLADBAhAsQLAABAsQLADBAhAsQLAABAtAsADBAhAsAMECBAtAsADG8VuAAQBXK5JIdHH4aQAAAABJRU5ErkJggg==') 0px 0px no-repeat;
 		}
 		.small-text{
 			font-size: 18px;
@@ -92,4 +93,62 @@
 			margin: 1% 0 0 0;
 		}
 	}
+}
+.title-blc{
+	margin-bottom: 35px;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height:3px;
+		background: $base-orange;
+	}
+	.little-text{
+		font-size: 18px;
+		color: #859aa1;
+		text-transform: uppercase;
+	}
+	.large-text{
+		font-size: 30px;
+		color: #556b72;
+		text-transform: uppercase;
+		font-weight: 800;
+	}
+}
+.benefits{
+	padding: 70px 0 110px 0;
+	.media-heading{
+		font-size: 16px;
+		color: $title-color;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+	.items-line{
+		padding-bottom:60px;
+		@media (max-width: 991px){
+			padding-bottom:15px;
+		}
+		.item{
+			@media (max-width: 991px){
+				margin-top: 15px;
+			}
+		}
+	}
+	.media-left{
+		padding-right: 30px;
+		div{
+			min-width: 69px;
+			text-align: center;
+			cursor: default;
+			img{
+				display: inline-block;
+			}
+		}
+	}
+	.media-body{
+		font-color: #a0a9b6;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	
 }

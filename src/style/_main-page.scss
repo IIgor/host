@@ -225,20 +225,11 @@
 		@include media(991){
 			margin-bottom: 15px;
 		}
-		&:nth-child(even){
 			.inner-blc{
 				&:hover{
 					box-shadow: 0px 0px 10px $base-blue;
 				}
 			}
-		}
-		&:nth-child(odd){
-			.inner-blc{
-				&:hover{
-					box-shadow: 0px 0px 10px $base-orange;	
-				}
-			}
-		}
 			.inner-blc{
 			border: 1px solid $search-border-color;
 			padding: 25px;
@@ -337,7 +328,7 @@
 			color: #fff;
 			font-size: 14px;
 			font-weight: 700;
-			padding: 23px 20px;
+			padding: 21px 20px;
 			border: none;
 			background: #ff8261;
 			text-transform: uppercase;

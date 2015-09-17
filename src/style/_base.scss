@@ -1,7 +1,7 @@
 $base_color: #8d9198;
 $base-orange: #ff8261;
 $base-blue: #52cbf8;
-$base-wright: #ffffff;
+$base-white: #ffffff;
 $base-black: #000;
 
 $nav_header_color: #ff8261;
@@ -10,6 +10,7 @@ $nav-header-color-hover: #52cbf8;
 $search-border-color: #dfeef3;
 $title-color: #556b72;
 
+$background-two: #e7f4f8;
 $background-three: #fffbde;
 
 $base-padding-top: 70px;
@@ -35,7 +36,12 @@ $features-content: "〉";
     display: block;
 }
 
-
+@mixin media($item){
+    @media screen and (max-width: $item + px){
+        @content;
+    }
+}
+// @include media(12000px){}
 html,body{
 	width: 100%;
     height: 100%;
@@ -58,6 +64,9 @@ body{
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
+.background_two{
+    background: $background-two;
+}
 .background_three{
     background: $background-three;
 }
@@ -68,3 +77,13 @@ body{
         padding: $base-padding-top/2 0 $base-padding-bottom/2 0;
     }
 }
+
+.btn{
+    border-radius: 0;
+    @include media(768){
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+

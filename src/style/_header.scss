@@ -97,6 +97,7 @@
 					width:100%;
 				}
 				li{
+					transition: all .3s linear;
 					@media (max-width: 991px){
 						width:100%;
 						display: block;
@@ -110,14 +111,12 @@
 						@media screen and (max-width:1200px) {
 						 	padding: 20px 17px;
 						}
-   
 						&:hover{
 							background: transparent;
 						}
 					}
 					&:hover{
-						background: darken($nav_header_color, 15%);
-						transition: all .5s ease-out;
+						background: darken($nav_header_color, 15%);	
 					}
 					&.active{
 						a{
@@ -136,7 +135,7 @@
 	width: 100%;
 	list-style-type: none;
 	background: $nav_header_color;
-	color: $base-wright;
+	color: $base-white;
 	text-align: right;
 	li{
 		display: inline-block;
@@ -151,7 +150,7 @@
 			border: none;
 		}
 		a{
-			color: $base-wright;
+			color: $base-white;
 		}
 	}
 }

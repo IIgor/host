@@ -10,7 +10,14 @@ $nav-header-color-hover: #52cbf8;
 $search-border-color: #dfeef3;
 $title-color: #556b72;
 
+$background-three: #fffbde;
+
+$base-padding-top: 70px;
+$base-padding-bottom: 110px;
+
 $footer-background: #4c515b;
+
+$features-content: "〉";
 
 // clearfix
 .clearfix {
@@ -50,4 +57,14 @@ body{
 .p-rl-0{
     padding-right: 0 !important;
     padding-left: 0 !important;
+}
+.background_three{
+    background: $background-three;
+}
+
+.base_padding{
+    padding: $base-padding-top 0 $base-padding-bottom 0;
+    @media (max-width: 768px) {
+        padding: $base-padding-top/2 0 $base-padding-bottom/2 0;
+    }
 }

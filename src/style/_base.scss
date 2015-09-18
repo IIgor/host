@@ -9,7 +9,10 @@ $nav_header_color: #ff8261;
 $nav-header-color-hover: #52cbf8;
 
 $search-border-color: #dfeef3;
+$base-border-color: #dfeef3;
 $title-color: #556b72;
+
+$btn-background-hover: #ff4515;
 
 $background-two: #e7f4f8;
 $background-three: #fffbde;
@@ -81,10 +84,12 @@ body{
 
 .btn{
     border-radius: 0;
+    transition: all .3s linear;
     @include media(768){
         width: 100%;
         display: block;
         text-align: center;
+
     }
 }
 

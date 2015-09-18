@@ -1,9 +1,11 @@
 // @import "_bootstrap";
 @import "_base";
 
-@import "_main-page";
-@import "_header";
-@import "_footer";
+
+@import "parts/_header";
+@import "parts/_footer";
+@import "parts/_main-page";
+@import "parts/_about-page";
 
 
 

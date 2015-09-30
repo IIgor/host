@@ -25,6 +25,9 @@
 	.items-right{
 		color: $base-color;
 		line-height: 24px;
+		@media (max-width: 991px){
+			margin-top: 15px;
+		}
 
 		.border-comment{
 			border: 1px solid $base-border-color;
@@ -47,8 +50,16 @@
 .about-offers{
 	.offers-items{
 		.items{
+			@media (max-width: 768px){
+				&:last-child{
+					margin-top: 25px;
+				}
+			}
 			img{
 				max-width: 100%;
+				@media (max-width: 1200px){
+					margin-bottom: 10px;
+				}
 			}
 
 			.title{
@@ -102,6 +113,7 @@
 		img{
 			max-width: 100%;
 		}
+
 		.name{
 			font-weight: 800;
 			text-transform: uppercase;
@@ -111,8 +123,15 @@
 		}
 
 		.social{
-			float: left;
-			margin-left: 8px;
+			display: inline-block;
+			margin-left: 5px;
+			@media (max-width: 1200px){
+				margin-top: 10px;
+				&:first-child{
+					margin-left: 0;
+				}
+			}
+			
 			&.fb a{
 				background: url('/img/icons.png') -59px -33px no-repeat;
 			}
@@ -127,9 +146,11 @@
 				height: 30px;
 				border: 1px solid $base-border-color;
 				display: inline-block;
-				
 			}
-			
+		}
+
+		@media (max-width: 768px){
+			text-align: center;
 		}
 	}
 }
